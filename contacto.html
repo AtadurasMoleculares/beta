@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlazar el archivo de estilos -->
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="imgs/iconoPAG.png" alt="Logo de Química">
+                <span>Química</span>
+            </div>            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="conocenos.html">Conócenos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="main">
+        <div class="contenido-conocenos">
+        <h1 class="page-title">Contacto</h1>
+            <form action="https://formspree.io/f/xzbnowpr" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="nombre" class="form-label">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="correo" class="form-label">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="motivo" class="form-label">Motivo:</label>
+                    <input type="text" id="tema" name="tema" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcion" class="form-label">Descripción:</label>
+                    <textarea id="descripcion" name="descripcion" class="form-input" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Enviar</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <div class="contact">
+                <a href="contacto.html"><h3>Contactarnos</h3></a>
+                <a href="https://www.flaticon.es/iconos-gratis/biologico" title="biologico iconos">Biologico iconos creados por Freepik - Flaticon</a>
+                <!-- Agregar detalles de contacto si es necesario -->
+            </div>
+            <div class="share">
+                <a href="#" onclick="copiarURL()"><h3>Compartir</h3></a>
+                <!-- Agregar botones para compartir en redes sociales aquí -->
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
