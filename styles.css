@@ -371,3 +371,44 @@ textarea.form-input {
     padding: 20px 0;
 }
 
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%; /* Ajusta el ancho para dispositivos móviles */
+    }
+
+    header .container {
+        flex-direction: column; /* Cambia a columna para dispositivos móviles */
+        align-items: center; /* Centra horizontalmente en dispositivos móviles */
+    }
+
+    nav ul li {
+        display: block;
+        margin-left: 0;
+    }
+
+    main {
+        padding-top: 50px; /* Ajusta el espacio de relleno para el header fijo */
+    }
+    .block {
+        width: calc(100% - 40px); /* Ajusta el ancho */
+    }
+
+    .block .image {
+        width: 100%; /* Ajusta la imagen al ancho del contenedor */
+        margin-right: 0; /* Elimina el margen derecho */
+    }
+    .contenedor-principal {
+        margin-top: 0; /* Elimina el margen superior */
+        margin-left: 0;
+        width: 100%; /* Ajusta la imagen al ancho del contenedor */
+
+    }
+
+    .indice {
+        display: none; /* Oculta el índice en dispositivos móviles */
+    }
+
+    .slide {
+        scroll-snap-align: center; /* Centra los slides en dispositivos móviles */
+    }
+}
